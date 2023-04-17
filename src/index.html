@@ -4,13 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
+    <title>JavaScript</title>
 </head>
 <body>
-    <div id="items"></div>
-    <div id="pagination"></div>
+  <div class="container">
 
-    <script type="module" src="./paginacion.js"></script>
-    
+    <div id="counter">
+      <button type="button" data-action="decrement">-1</button>
+      <span id="value">0</span>
+      <button type="button" data-action="increment">+1</button>
+    </div>
+
+    <input type="text" id="name-input" placeholder="Please enter your name" />
+    <h2>Hello <span id="name-output">Anonymous</span>!</h2>
+
+    <input
+    type="text"
+    id="validation-input"
+    data-length="6"
+    placeholder="Please enter 6 symbols"
+    />
+    <p></p>
+
+    <div class="abracadabra">
+      <input id="font-size-control" type="range" min="16" max="96" />
+      <br />
+      <span id="text">Abracadabra!</span>
+    </div>
+
+    <div class="widget">
+      <h2>Background color: <span class="color">-</span></h2>
+      <button type="button" class="change-color">Change color</button>
+    </div>
+
+    <div class="timerr">
+      <h3>Choose a date in the future:</h3>
+      <input type="text" id="datetime-picker" />
+      <button type="button" data-start>Start</button>
+  
+      <div class="timer">
+        <div class="field">
+          <span class="value" data-days>00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="field">
+          <span class="value" data-hours>00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+    <script type="module" src="./exercices.js"></script> 
 </body>
 </html>

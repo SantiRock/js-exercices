@@ -1,2 +1,92 @@
-@import './common';
-@import './example';
+* {
+    box-sizing: border-box;
+  }
+
+.container {
+    margin: auto;
+    text-align: center;
+    padding: 40px 20px;
+    min-width: 305px;
+    max-width: 1124px;
+}
+
+input {
+    padding: 8px;
+    font: inherit;
+}
+  
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#counter {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+#validation-input {
+    border: 2px solid #bdbdbd;
+  }
+
+  #validation-input.valid {
+    border-color: #4caf50;
+  }
+
+  #validation-input.invalid {
+    border-color: #f44336;
+  }
+
+  .widget {
+    text-align: center;
+  }
+
+  .widget p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+
+  .widget span {
+    font-family: monospace;
+  }
+
+  .widget button {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .abracadabra {
+    margin-bottom: 20px;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .timerr {
+    margin-top: 30px;
+    text-align: center;
+    
+  }
+
+  .timer {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: max-content;
+  }
+
+
+
+
+  @media screen and (min-width: 500px) {
+    .container {
+        padding: 50px;
+    } 
+  }
